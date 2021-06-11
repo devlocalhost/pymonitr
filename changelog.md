@@ -48,7 +48,15 @@
 2. **Added CPU temperature, which MIGHT NOT be accurate, because im using a laptop that has 1 core (yes, 1 core, im not joking...). The program also reads the "/sys/class/thermal/thermal_zone0/temp" file to get the temperature. If you have any better idea to do this, you can open a issue or something *idk lol***
 
 #### Version: 8
-1. **1) Added CPU vendor & new color,**
+1. **Added CPU vendor & new color,**
 2. **Added arguments/flags to control refresh time for the stats,**
 3. **Added a exception in case CPU temperature cannot be read,**
 4. **The program now will ask you to install the required packages incase you havent installed them, which are: [psutil](https://pypi.org/project/psutil/) and [colorhex](https://pypi.org/project/colorhex/)**
+
+#### Version: 8.3
+1. **Added back the CPU frequencies. Now you can see each cores frequency**
+2. **Added apps version at the top**
+3. **Changed "Total cores" to:**
+	**+ Total non logical cores &**
+	**+ Total logical cores**
+4. **New colors to some fields**

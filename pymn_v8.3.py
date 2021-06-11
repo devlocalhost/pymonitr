@@ -51,7 +51,7 @@ from colorhex import colorex, BOLD, BLINKING, UNDERLINE, ITALIC
 CPU_VENDOR = check_output("lscpu | grep 'Vendor ID' | cut -f 2 -d ':' | awk '{$1=$1}1' | tr '\n', ' '", shell=True, text=True)
 CPU_MODEL = check_output("lscpu | grep 'Model name' | cut -f 2 -d ':' | awk '{$1=$1}1' | tr '\n', ' '", shell=True, text=True)
 ARCH_TYPE = check_output("uname -m | tr '\n', ' '", shell=True, text=True)
-VERSION = 'v8'
+VERSION = 'v8.3'
 
 flag = ArgumentParser('python3 pymn.py')
 flag.add_argument('-r', type=int, default=1, help='How many seconds should the program refresh the stats (Default is 1). Example: pymn.py -r 2. Float numbers are not allowed.')
@@ -207,7 +207,17 @@ def monitr():
 		except:
 			print(colorex('Temperature: Could not read temperature', 'f04947', style=BOLD))
 
-		print(colorex(f'Total cores: {cpu_count()}', '82589f', style=BOLD))
+		print(colorex(f'Total non logical cores: {cpu_count(logical=False)}', 'd892e2', style=BOLD))
+		print(colorex(f'Logical cores: {cpu_count(logical=True)}', '82589f', style=BOLD))
+
+		corenum = 0
+
+		for core in cpu:
+			for ccore in range(1):
+				corenum += 1
+			
+			print(colorex(f'Core {corenum} frequency: {core[0]} GHz', '2fa7e3', style=BOLD)) # ADD RANDOM COLORS HERE
+
 		print(colorex(f'Architecture type: {ARCH_TYPE}', 'ccae62', style=BOLD))
 		print(colorex(f'CPU Vendor: {CPU_VENDOR}', '7ed6df', style=BOLD))
 		print(colorex(f'CPU model/name: {CPU_MODEL}', 'FEA47F', style=BOLD))
