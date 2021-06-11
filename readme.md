@@ -12,7 +12,7 @@
 
 # Any screenshots??:
 ### **Sure**
-![screenshot 1](img.png)
+![screenshot 1](screensh.png)
 
 # Requirements
 ### **[psutil](https://pypi.org/project/psutil/) and [colorhex](https://pypi.org/project/colorhex/) are required**
