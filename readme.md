@@ -1,4 +1,4 @@
-# PyMonitr, a simple system monitor!
+# PyMonitr, a simple system monitor for your linux computer!
 ### **Do you want to monitor your RAM, storage, swap & CPU usage easily & quickly? PyMonitr is here for you!!**
 ### **With PyMonitr you can:**
 1. **Monitor your RAM, CPU, storage ('/') & swap usage,**
