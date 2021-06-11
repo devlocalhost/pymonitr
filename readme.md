@@ -2,7 +2,7 @@
 ### **But why PyMonitr??**
 ### **Because with PyMonitr you can:**
 1. **Monitor your RAM, CPU, storage ('/') & swap usage,**
-2. **AND information about your CPU, such as:**
+2. **and get information about your CPU, such as:**
 + **Usage,**
 + **Temperature,**
 + **Total logical & non logical cores,**
