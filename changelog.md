@@ -60,3 +60,6 @@
 	**+ Total non logical cores &**
 	**+ Total logical cores**
 4. **New colors to some fields**
+
+#### Version 9. final version
+1. **Network related stats**
